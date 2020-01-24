@@ -4,10 +4,23 @@ This repository contains MATLAB and python codes for computing weighted delaunay
 Weighted delaunay triangulation is computed by exploiting the duality between Delaunay triangulation and a convex hull of one dimension higher.
 
 ## In Python
-An example and function to computed it is provided in `weighted_delaunay.ipynb`
+An example is provided in `weighted_delaunay.ipynb` that contains a function to compute weighted delaynay triangulation. 
+
+Here's a snippet of the code:
+
+```python
+num_points = 10
+points = np.random.rand(num_points, 2)
+weights = np.random.rand(num_points,1)
+delaunay = WeightedDelaunay(points,weights)
+delaunay = np.asarray(delaunay)
+print(delaunay)
+```
 
 ## In MATLAB
-The matlab function provided as `WeightedDelaunay.m` takes points in `num_points X dimensions` and weights as `num_points X 1` MATLAB arrays and produces triangulated faces compatible to be plotted with MATLAB `triplot.m`. Here's an example script for the same.
+The matlab function provided as `WeightedDelaunay.m` takes points in `num_points X dimensions` and weights as `num_points X 1` MATLAB arrays and produces triangulated faces compatible to be plotted with MATLAB `triplot.m`. 
+
+Here's an example script for the same.
 
 ```matlab
 num_points = 10;
