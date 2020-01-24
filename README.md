@@ -3,6 +3,10 @@ This repository contains MATLAB and python codes for computing weighted delaunay
 
 Weighted delaunay triangulation is computed by exploiting the duality between Delaunay triangulation and a convex hull of one dimension higher.
 
+## In Python
+An example and function to computed it is provided in `weighted_delaunay.ipynb`
+
+## In MATLAB
 The matlab function provided as `WeightedDelaunay.m` takes points in `num_points X dimensions` and weights as `num_points X 1` MATLAB arrays and produces triangulated faces compatible to be plotted with MATLAB `triplot.m`. Here's an example script for the same.
 
 ```matlab
@@ -34,3 +38,5 @@ fig_labels(2,'title','Delaunay')
 
 This produces the following figure as an output.
 ![MATLABWD](demo/demo.png)
+
+
